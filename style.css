@@ -1,0 +1,90 @@
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+
+body {
+    width: 100%;
+    min-width: 320px;
+    margin: 0;
+    font-size: 20px;
+    color: rgb(192, 192, 192);
+    background-color: black;
+    background-image: url(img/fancy-cushion.png);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px silver;
+    transition: all 0.3s linear;
+}
+
+a:hover {
+    color: silver;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+
+
+/*HEADER*/
+
+.header-content {
+    margin: 0 5%;
+    width: 90%;
+    height: 300px;
+    border-bottom: 1px solid silver;
+}
+
+.mail-number {
+    float: right;
+    padding: 10px 10px 0 0;
+    font-size: 0.6em;
+}
+
+.mail-number a {
+    margin-left: 20px;
+}
+
+nav {
+    width: 15%;
+    min-width: 140px;
+    margin-left: 10px;
+    padding-left: 20px;
+    border: 3px solid rgba(192, 192, 192, 0.8);
+    box-shadow: inset 0 0 10px 8px rgba(192, 192, 192, 0.5);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*MAIN*/
+
+
+
+
+
+
+
+/*FOOTER*/

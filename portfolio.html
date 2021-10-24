@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Site - portfolio</title>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+               $("#bt").on("click","a", function (event) {
+                   event.preventDefault();
+                   var id  = $(this).attr('href'),
+                       top = $(id).offset().top;
+                   $('body,html').animate({scrollTop: top}, 800);
+               });
+               $("#menu").on("click","a", function (event) {
+                   event.preventDefault();
+                   var id  = $(this).attr('href'),
+                       top = $(id).offset().top;
+                   $('body,html').animate({scrollTop: top}, 800);
+                });
+           });
+           
+        </script>
+
+    </head>
+    <body>
+        <div id="bt"><a href="#up"><div class="button-up">🡹</div></a></div>
+        <!--HEADER-->
+        <header id="up">
+            <div class="container">
+                <div class="header-content">
+                    <div class="mail-number">
+                        <a href="tel:+4733378901">&#x0260E; +47 333 78 901</a>
+                        <a href="mailto:someone@example.com">&#9993; someone@example.com</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--MAIN-->
+        <main>
+            <div class="container">
+                <div class="main-content">
+                    <br><h1>My portfolio</h1><br>
+                    <div class="main-nav">
+                        <nav id="menu">
+                            <ul>
+                                <li><a href="#About">➤ About</a></li>
+                                <li><a href="#My-skills">➤ My skills</a></li>
+                                <li><a href="#My-projects">➤ My projects</a></li>
+                            </ul>                 
+                        </nav>
+                    </div>
+                    <section>
+                        <h2 id="About">About</h2>
+                        <p>My name's Ilya. But everyone names me ƑȺĶȨƦ</p>
+                    </section>
+                    <section>
+                        <h2 id="My-skills">My skills</h2>
+                        <dl>
+                            <dt>HTML</dt>
+                            <dd>smth</dd>
+                            <dt>CSS</dt>
+                            <dd>smth</dd>
+                            <dt>Python</dt>
+                            <dd>smth</dd>
+                            <dt>Java Script</dt>
+                            <dd>nope</dd>
+                            <dt>HTML</dt>
+                            <dd>smth</dd>
+                            <dt>CSS</dt>
+                            <dd>smth</dd>
+                            <dt>Python</dt>
+                            <dd>smth</dd>
+                            <dt>Java Script</dt>
+                            <dd>nope</dd>
+                            <dt>HTML</dt>
+                            <dd>smth</dd>
+                            <dt>CSS</dt>
+                            <dd>smth</dd>
+                            <dt>Python</dt>
+                            <dd>smth</dd>
+                            <dt>Java Script</dt>
+                            <dd>nope</dd>
+                            <dt>HTML</dt>
+                            <dd>smth</dd>
+                            <dt>CSS</dt>
+                            <dd>smth</dd>
+                            <dt>Python</dt>
+                            <dd>smth</dd>
+                            <dt>Java Script</dt>
+                            <dd>nope</dd>
+                            
+                        </dl>
+                    </section>
+                    <section>
+                        <h2 id="My-projects">My projects</h2>
+                        <p>There will be information about projects and links to them</p>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>

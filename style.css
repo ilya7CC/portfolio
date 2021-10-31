@@ -1,6 +1,5 @@
 body {
     width: 100%;
-    min-width: 320px;
     margin: 0;
     font-size: 18px;
     color: rgb(192, 192, 192);
@@ -35,11 +34,32 @@ p {
 }
 
 .container {
-    margin: 0 15%;
-    width: 70%;
+    margin: 0px auto;
+    max-width: 1200px;
     height: 100%;
     background-image: url(img/fancy-cushion.png);
 }
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+
+
 
 .button-up {
     position: fixed;
@@ -64,6 +84,13 @@ p {
 }
 
 /*HEADER*/
+
+/*
+.header-content {
+
+}
+*/
+
 
 .mail-number {
     float: right;
@@ -91,7 +118,6 @@ p {
 
 nav {
     width: 15%;
-    min-width: 140px;
     margin-left: 10px;
     margin-bottom: 10px;
     padding-left: 20px;

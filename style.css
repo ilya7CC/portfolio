@@ -40,27 +40,6 @@ p {
     background-image: url(img/fancy-cushion.png);
 }
 
-@media (max-width:1200px) {
-    .container {
-        max-width: 970px;
-    }
-}
-
-@media (max-width:992px) {
-    .container {
-        max-width: 970px;
-    }
-}
-
-@media (max-width:767px) {
-    .container {
-        max-width: none;
-    }
-}
-
-
-
-
 .button-up {
     position: fixed;
     right: 30px;
@@ -134,15 +113,28 @@ nav li {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*FOOTER*/
+
+
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+    }
+    nav {
+        width: 80%;
+        margin: 10px auto;
+    }
+}

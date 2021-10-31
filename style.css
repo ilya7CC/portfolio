@@ -70,17 +70,22 @@ p {
 
 /*HEADER*/
 
-/*
-.header-content {
 
+.header-content {
+    min-height: 40px;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.5);
 }
-*/
+
 
 
 .mail-number {
     float: right;
     padding: 10px 10px 0 0;
     font-size: 0.8em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .mail-number a {
@@ -128,11 +133,18 @@ nav li {
     .container {
         max-width: 970px;
     }
+    nav {
+        width: 50%;
+        margin: 10px auto;
+    }
 }
 
 @media (max-width:767px) {
     .container {
         max-width: none;
+    }
+    body {
+        font-size: 16px;
     }
     a,h1 {
         color: silver;
@@ -141,9 +153,20 @@ nav li {
         width: 80%;
         margin: 10px auto;
     }
+    .header-content {
+        min-height: 50px;
+    }
     .button-up {
         border-color: white;
         box-shadow: 0 0 8px 4px rgba(255, 255, 255, 1);
+    }
+    .mail-number {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .mail-number a {
+        margin-left: 0px;
     }
 }
 

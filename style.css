@@ -40,6 +40,10 @@ p {
     background-image: url(img/fancy-cushion.png);
 }
 
+
+
+
+
 .button-up {
     position: fixed;
     right: 30px;
@@ -55,6 +59,8 @@ p {
     justify-content: center;
     align-items: center;
     
+    font-weight: 700;
+    font-size: 30px;
 }
 
 .button-up:hover {
@@ -112,11 +118,6 @@ nav li {
     margin-bottom: 10px;
 }
 
-
-/*FOOTER*/
-
-
-
 @media (max-width:1200px) {
     .container {
         max-width: 970px;
@@ -133,8 +134,19 @@ nav li {
     .container {
         max-width: none;
     }
+    a,h1 {
+        color: silver;
+    }
     nav {
         width: 80%;
         margin: 10px auto;
     }
+    .button-up {
+        border-color: white;
+        box-shadow: 0 0 8px 4px rgba(255, 255, 255, 1);
+    }
 }
+
+
+
+/*FOOTER*/
